@@ -1,0 +1,32 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = '1.8'
+version = '0.1'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'EOTE Dice Roller',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    googleCollectionsVersion = '1.+'
+    junitVersion = '4.+'
+    hamcrestVersion = '1+'
+    apacheCommonsVersion = '3+'
+    slf4jVersion = '1+'
+}
+
+dependencies {
+    compile group: 'com.google.collections', name: 'google-collections', version: "$googleCollectionsVersion"
+    compile group: 'org.apache.commons',     name: 'commons-lang3',      version: "$apacheCommonsVersion"
+    compile group: 'org.slf4j',              name: 'slf4j-api',          version: "$slf4jVersion"
+
+    testCompile group: 'junit', name: 'junit', version: "$junitVersion"
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: "$hamcrestVersion"
+}

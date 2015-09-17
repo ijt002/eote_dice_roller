@@ -1,0 +1,67 @@
+.text-field {
+	-fx-pref-width: 100px;
+}
+.grid {
+	-fx-alignment: top-center;
+	-fx-hgap: 10px;
+	-fx-vgap: 10px;
+	-fx-padding: 25px
+}
+.button {
+	-fx-text-fill: white;
+    -fx-background-color: Maroon;
+}
+.button:hover {
+    -fx-background-color: FireBrick;
+}
+.button:pressed {
+	-fx-background-color: darkred;
+}
+.plus-minus-button {
+	-fx-pref-width: 45px;
+	-fx-font-size: 20px;
+	-fx-font-family: 'MODENA'
+}
+.upgrade-downgrade-button {
+	-fx-pref-width: 155px;
+}
+
+.small-gap {
+	visibility: hidden;
+	-fx-min-width: 10px;
+	-fx-min-height: 10px;
+}
+#roll-button {
+	-fx-pref-width: 210px;
+}
+.die-symbol {
+	-fx-font-family: 'EotE Symbol';
+  	-fx-font-size: 20px;
+}
+.scroll-pane {
+    -fx-padding: 0;
+}
+.scroll-pane > .viewport {
+   -fx-background-image: url("../resources/backgrounds/subtle.png");
+}
+
+.root {
+	-fx-font-family: 'Arkitech Medium';
+  	-fx-font-size: 10px;
+}
+
+#scene-title {
+	-fx-font-family: 'Han Solo';
+  	-fx-font-size: 25px;
+}
+
+.chance-polygon {
+	-fx-stroke: BLACK;
+	-fx-stroke-line-cap: round;
+	-fx-stroke-width: 2;
+}
+
+.about-text {
+	-fx-font-family: MODENA;
+	-fx-font-size: 12px;
+}
